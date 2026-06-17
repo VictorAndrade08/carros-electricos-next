@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { sfx, isMuted, toggleMuted } from "@/lib/sound";
 
 const NAV = [
   { label: "Inicio", href: "/" },
@@ -14,6 +15,10 @@ const NAV = [
  *  No es sticky. En móvil despliega un menú a pantalla completa. */
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [muted, setMutedState] = useState(false);
+
+  // Sincroniza el estado de silencio guardado (tras montar, sin desajuste SSR).
+  useEffect(() => setMutedState(isMuted()), []);
 
   // Optimización móvil: bloquea el scroll del fondo y permite cerrar con Escape.
   useEffect(() => {
@@ -53,7 +58,8 @@ export default function Header() {
             <Link
               key={n.href}
               href={n.href}
-              className="text-[15px] font-bold uppercase tracking-wider text-neutral-300 transition-colors hover:text-white"
+              onMouseEnter={() => sfx.hover()}
+              className="nav-underline text-[15px] font-bold uppercase tracking-wider text-neutral-300 transition-colors hover:text-white"
             >
               {n.label}
             </Link>
@@ -73,10 +79,39 @@ export default function Header() {
             </svg>
           </Link>
 
+          {/* Silenciar / activar sonidos de interfaz */}
+          <button
+            type="button"
+            data-no-sfx
+            onClick={() => {
+              const m = toggleMuted();
+              setMutedState(m);
+              if (!m) sfx.click();
+            }}
+            aria-label={muted ? "Activar sonidos" : "Silenciar sonidos"}
+            aria-pressed={muted}
+            className="grid h-11 w-11 place-items-center rounded-full text-neutral-200 transition hover:bg-brand hover:text-black"
+          >
+            {muted ? (
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M11 5 6 9H2v6h4l5 4V5z" />
+                <path d="m23 9-6 6M17 9l6 6" />
+              </svg>
+            ) : (
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M11 5 6 9H2v6h4l5 4V5z" />
+                <path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a9 9 0 0 1 0 14" />
+              </svg>
+            )}
+          </button>
+
           {/* Botón hamburguesa (solo móvil) */}
           <button
             type="button"
-            onClick={() => setOpen((v) => !v)}
+            onClick={() => setOpen((v) => {
+              if (!v) sfx.open();
+              return !v;
+            })}
             aria-label={open ? "Cerrar menú" : "Abrir menú"}
             aria-expanded={open}
             className="grid h-11 w-11 place-items-center rounded-full text-neutral-200 transition hover:bg-brand hover:text-black md:hidden"

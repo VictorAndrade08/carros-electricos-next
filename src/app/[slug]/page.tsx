@@ -125,7 +125,7 @@ export default async function ArticlePage({
       </header>
 
       {a.portada && (
-        <div className="mx-auto mt-7 max-w-4xl px-5">
+        <div className="reveal mx-auto mt-7 max-w-4xl px-5">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={a.portada}

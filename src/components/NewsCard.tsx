@@ -5,7 +5,10 @@ import type { Article } from "@/lib/articles";
 /** Tarjeta de noticia: imagen grande, título destacado y fecha legible. */
 export default function NewsCard({ a }: { a: Article }) {
   return (
-    <Link href={`/${a.slug}/`} className="group block">
+    <Link
+      href={`/${a.slug}/`}
+      className="reveal group block transition-transform duration-300 hover:-translate-y-1"
+    >
       <div className="relative aspect-[16/10] overflow-hidden rounded-xl bg-neutral-100">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img

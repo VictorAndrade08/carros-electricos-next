@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ImageFallback from "@/components/ImageFallback";
+import ClientFx from "@/components/ClientFx";
 import { SITE, absoluteUrl } from "@/lib/site";
 
 // Fuente de Google descargada y auto-alojada en build (sin pedidos al CDN de Google).
@@ -71,10 +72,17 @@ export default function RootLayout({
   return (
     <html lang="es" className={archivo.variable}>
       <body className="bg-white text-neutral-900 antialiased">
+        {/* Marca que hay JS antes de pintar: evita parpadeo en las animaciones. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: "document.documentElement.classList.add('js')",
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
         />
+        <ClientFx />
         <Header />
         <main className="min-h-[60vh]">{children}</main>
         <Footer />

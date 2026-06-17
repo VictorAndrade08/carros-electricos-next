@@ -41,18 +41,18 @@ export default async function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/45 to-transparent" />
               <div className="absolute inset-x-0 bottom-0">
                 <div className="mx-auto max-w-7xl px-5 pb-12 md:px-12">
-                  <span className="inline-block bg-brand px-3 py-1 text-sm font-black uppercase tracking-widest text-black">
+                  <span className="anim-rise inline-block bg-brand px-3 py-1 text-sm font-black uppercase tracking-widest text-black">
                     {hero.categorias[0] || "Noticias"}
                   </span>
-                  <h1 className="mt-4 max-w-4xl text-4xl font-black uppercase leading-[0.95] text-white md:text-6xl">
+                  <h1 className="anim-rise-2 mt-4 max-w-4xl text-4xl font-black uppercase leading-[0.95] text-white md:text-6xl">
                     {hero.titulo}
                   </h1>
                   {hero.extracto && (
-                    <p className="mt-4 max-w-2xl text-base text-neutral-200 md:text-lg">
+                    <p className="anim-rise-3 mt-4 max-w-2xl text-base text-neutral-200 md:text-lg">
                       {hero.extracto}
                     </p>
                   )}
-                  <span className="mt-6 inline-flex items-center gap-2 text-base font-bold uppercase tracking-wider text-brand">
+                  <span className="anim-rise-4 mt-6 inline-flex items-center gap-2 text-base font-bold uppercase tracking-wider text-brand">
                     Leer más
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M5 12h14M13 6l6 6-6 6" />
@@ -77,7 +77,7 @@ export default async function Home() {
 
         {/* Todas las noticias */}
         <section className="border-t border-neutral-200 py-12">
-          <h2 className="mb-8 text-4xl font-black uppercase tracking-tight text-ink">
+          <h2 className="reveal mb-8 text-4xl font-black uppercase tracking-tight text-ink">
             Todas las Noticias<span className="text-brand">.</span>
           </h2>
           <div className="grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
