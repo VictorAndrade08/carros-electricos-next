@@ -7,7 +7,7 @@ export const SITE = {
   shortName: "Carros Eléctricos",
   description:
     "Noticias, reseñas y tecnología de los autos eléctricos en Ecuador y el mundo.",
-  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://carroselectricos.ec").replace(
+  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://carroselectrico.com").replace(
     /\/$/,
     "",
   ),
