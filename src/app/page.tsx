@@ -18,9 +18,8 @@ function mezclar<T>(arr: T[]): T[] {
 export default async function Home() {
   const all = await getArticles(60);
   const hero = all[0]; // la más reciente queda de portada
-  const resto = mezclar(all.slice(1)); // el resto, mezclado
-  const featured = resto.slice(0, 4);
-  const grid = resto.slice(4);
+  const featured = all.slice(1, 5); // siguientes más recientes (sin mezclar): salen primero
+  const grid = mezclar(all.slice(5)); // el resto, mezclado para que se vea variado
 
   return (
     <div>
@@ -36,7 +35,7 @@ export default async function Home() {
                 fetchPriority="high"
                 decoding="async"
                 sizes="100vw"
-                className="h-full w-full object-cover opacity-90 transition duration-700 group-hover:scale-105"
+                className="h-full w-full object-contain transition duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/45 to-transparent" />
               <div className="absolute inset-x-0 bottom-0">

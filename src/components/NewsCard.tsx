@@ -17,7 +17,7 @@ export default function NewsCard({ a }: { a: Article }) {
           loading="lazy"
           decoding="async"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+          className="h-full w-full object-contain transition duration-500 group-hover:scale-105"
         />
         {a.categorias[0] && (
           <span className="absolute left-0 top-3 bg-brand px-3 py-1 text-xs font-black uppercase tracking-wider text-black">

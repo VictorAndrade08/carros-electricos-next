@@ -133,7 +133,7 @@ export default async function ArticlePage({
             fetchPriority="high"
             decoding="async"
             sizes="(max-width: 896px) 100vw, 896px"
-            className="aspect-[16/9] w-full rounded-2xl object-cover"
+            className="w-full rounded-2xl bg-neutral-100 object-contain"
           />
         </div>
       )}
