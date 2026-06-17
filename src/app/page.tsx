@@ -4,11 +4,23 @@ import NewsCard from "@/components/NewsCard";
 
 export const runtime = "edge";
 
+/** Mezcla un arreglo (Fisher-Yates) para que el home se vea variado y no agrupe
+ *  temas parecidos. Se baraja en cada render (el CDN lo cachea ~30s). */
+function mezclar<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 export default async function Home() {
   const all = await getArticles(60);
-  const hero = all[0];
-  const featured = all.slice(1, 5);
-  const grid = all.slice(5);
+  const hero = all[0]; // la más reciente queda de portada
+  const resto = mezclar(all.slice(1)); // el resto, mezclado
+  const featured = resto.slice(0, 4);
+  const grid = resto.slice(4);
 
   return (
     <div>
