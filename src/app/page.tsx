@@ -35,7 +35,7 @@ export default async function Home() {
                 fetchPriority="high"
                 decoding="async"
                 sizes="100vw"
-                className="h-full w-full object-contain transition duration-700 group-hover:scale-105"
+                className="h-full w-full object-cover opacity-90 transition duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/45 to-transparent" />
               <div className="absolute inset-x-0 bottom-0">
