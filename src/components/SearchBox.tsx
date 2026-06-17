@@ -91,7 +91,7 @@ export default function SearchBox({ initial = "" }: { initial?: string }) {
         role="combobox"
         aria-expanded={open}
         aria-haspopup="listbox"
-        aria-owns={listId}
+        aria-controls={listId}
         className="flex overflow-hidden rounded-full bg-neutral-100 ring-1 ring-neutral-200 focus-within:ring-2 focus-within:ring-brand"
       >
         <input

@@ -1,7 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   // Proyecto de Cloudflare Pages (next-on-pages).
-  "name": "revistamotors-next",
+  "name": "carros-electricos-next",
   "pages_build_output_dir": ".vercel/output/static",
   "compatibility_date": "2025-06-01",
   "compatibility_flags": ["nodejs_compat"],
