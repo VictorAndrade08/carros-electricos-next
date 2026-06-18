@@ -38,25 +38,28 @@ export default async function Home() {
                 className="h-full w-full object-cover opacity-90 transition duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/45 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-l from-black/60 via-transparent to-transparent" />
               <div className="absolute inset-x-0 bottom-0">
                 <div className="mx-auto max-w-7xl px-5 pb-12 md:px-12">
-                  <span className="anim-rise inline-block bg-brand px-3 py-1 text-sm font-black uppercase tracking-widest text-black">
-                    {hero.categorias[0] || "Noticias"}
-                  </span>
-                  <h1 className="anim-rise-2 mt-3 max-w-3xl text-2xl font-black uppercase leading-[1.05] text-white md:text-4xl">
-                    {hero.titulo}
-                  </h1>
-                  {hero.extracto && (
-                    <p className="anim-rise-3 mt-3 max-w-xl text-sm text-neutral-200 md:text-base">
-                      {hero.extracto}
-                    </p>
-                  )}
-                  <span className="anim-rise-4 mt-6 inline-flex items-center gap-2 text-base font-bold uppercase tracking-wider text-brand">
-                    Leer más
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M5 12h14M13 6l6 6-6 6" />
-                    </svg>
-                  </span>
+                  <div className="ml-auto max-w-2xl text-right">
+                    <span className="anim-rise inline-block bg-brand px-3 py-1 text-sm font-black uppercase tracking-widest text-black">
+                      {hero.categorias[0] || "Noticias"}
+                    </span>
+                    <h1 className="anim-rise-2 mt-3 text-xl font-black uppercase leading-[1.05] text-white md:text-3xl">
+                      {hero.titulo}
+                    </h1>
+                    {hero.extracto && (
+                      <p className="anim-rise-3 ml-auto mt-3 max-w-xl text-sm text-neutral-200 md:text-base">
+                        {hero.extracto}
+                      </p>
+                    )}
+                    <span className="anim-rise-4 mt-6 inline-flex items-center gap-2 text-base font-bold uppercase tracking-wider text-brand">
+                      Leer más
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M5 12h14M13 6l6 6-6 6" />
+                      </svg>
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
