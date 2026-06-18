@@ -33,7 +33,10 @@ export const metadata: Metadata = {
     "tecnología",
     "movilidad eléctrica",
   ],
-  alternates: { canonical: "/" },
+  alternates: {
+    canonical: "/",
+    types: { "application/rss+xml": "/feed.xml" },
+  },
   openGraph: {
     type: "website",
     siteName: SITE.name,
@@ -56,14 +59,36 @@ export const metadata: Metadata = {
   },
 };
 
-const orgJsonLd = {
+const siteJsonLd = {
   "@context": "https://schema.org",
-  "@type": "NewsMediaOrganization",
-  name: SITE.name,
-  url: SITE.url,
-  logo: absoluteUrl("/logo.png"),
-  description: SITE.description,
-  sameAs: [SITE.social.instagram, SITE.social.facebook, SITE.social.tiktok],
+  "@graph": [
+    {
+      "@type": "NewsMediaOrganization",
+      "@id": `${SITE.url}/#organization`,
+      name: SITE.name,
+      url: SITE.url,
+      logo: { "@type": "ImageObject", url: absoluteUrl("/logo.png") },
+      description: SITE.description,
+      sameAs: [SITE.social.instagram, SITE.social.facebook, SITE.social.tiktok],
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${SITE.url}/#website`,
+      url: SITE.url,
+      name: SITE.name,
+      description: SITE.description,
+      inLanguage: "es-EC",
+      publisher: { "@id": `${SITE.url}/#organization` },
+      potentialAction: {
+        "@type": "SearchAction",
+        target: {
+          "@type": "EntryPoint",
+          urlTemplate: `${SITE.url}/buscar/?s={search_term_string}`,
+        },
+        "query-input": "required name=search_term_string",
+      },
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -80,7 +105,7 @@ export default function RootLayout({
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
         />
         <ClientFx />
         <Header />

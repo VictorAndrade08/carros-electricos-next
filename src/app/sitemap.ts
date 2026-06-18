@@ -18,12 +18,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })),
   ];
 
-  const noticias: MetadataRoute.Sitemap = articulos.map((a) => ({
-    url: absoluteUrl(`/${a.slug}/`),
-    lastModified: a.fecha ? new Date(a.fecha) : undefined,
-    changeFrequency: "weekly",
-    priority: 0.7,
-  }));
+  const noticias: MetadataRoute.Sitemap = articulos.map((a) => {
+    const img = a.portada
+      ? a.portada.startsWith("http")
+        ? a.portada
+        : absoluteUrl(a.portada)
+      : null;
+    return {
+      url: absoluteUrl(`/${a.slug}/`),
+      lastModified: a.fecha ? new Date(a.fecha) : undefined,
+      changeFrequency: "weekly" as const,
+      priority: 0.7,
+      ...(img ? { images: [img] } : {}),
+    };
+  });
 
   return [...fijas, ...noticias];
 }

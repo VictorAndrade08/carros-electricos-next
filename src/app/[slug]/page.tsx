@@ -70,24 +70,52 @@ export default async function ArticlePage({
     .filter((r) => r.slug !== slug)
     .slice(0, 3);
 
+  // Migas de pan (ruta) para resultados enriquecidos.
+  const crumbs = [
+    { name: "Inicio", item: SITE.url },
+    ...(a.categorias[0]
+      ? [
+          {
+            name: a.categorias[0],
+            item: absoluteUrl(`/categoria/${slugify(a.categorias[0])}/`),
+          },
+        ]
+      : []),
+    { name: a.titulo, item: absoluteUrl(`/${slug}/`) },
+  ];
+
   // Datos estructurados (Google los usa para resultados enriquecidos).
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
-    headline: a.titulo,
-    description: resumen(a),
-    image: a.portada ? [a.portada] : [absoluteUrl("/logo.png")],
-    datePublished: a.fecha || undefined,
-    dateModified: a.fecha || undefined,
-    articleSection: a.categorias[0],
-    keywords: a.tags.join(", "),
-    mainEntityOfPage: { "@type": "WebPage", "@id": absoluteUrl(`/${slug}/`) },
-    author: { "@type": "Organization", name: SITE.name, url: SITE.url },
-    publisher: {
-      "@type": "Organization",
-      name: SITE.name,
-      logo: { "@type": "ImageObject", url: absoluteUrl("/logo.png") },
-    },
+    "@graph": [
+      {
+        "@type": "NewsArticle",
+        headline: a.titulo,
+        description: resumen(a),
+        image: a.portada ? [a.portada] : [absoluteUrl("/logo.png")],
+        datePublished: a.fecha || undefined,
+        dateModified: a.fecha || undefined,
+        articleSection: a.categorias[0],
+        keywords: a.tags.join(", "),
+        inLanguage: "es-EC",
+        mainEntityOfPage: { "@type": "WebPage", "@id": absoluteUrl(`/${slug}/`) },
+        author: { "@type": "Organization", name: SITE.name, url: SITE.url },
+        publisher: {
+          "@type": "Organization",
+          name: SITE.name,
+          logo: { "@type": "ImageObject", url: absoluteUrl("/logo.png") },
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: crumbs.map((c, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name: c.name,
+          item: c.item,
+        })),
+      },
+    ],
   };
 
   return (

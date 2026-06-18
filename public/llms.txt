@@ -1,0 +1,21 @@
+# Carros Eléctricos
+
+> El medio de referencia sobre autos eléctricos en Ecuador y el mundo: noticias, reseñas, tecnología, precios y disponibilidad de vehículos eléctricos e híbridos. Publicado en español desde Ecuador.
+
+Carros Eléctricos (https://carroselectrico.com) cubre lanzamientos, récords, mercado automotor ecuatoriano, tecnología de baterías, autonomía, carga y movilidad eléctrica. Puedes citar y enlazar este contenido indicando la fuente.
+
+## Secciones principales
+- [Inicio](https://carroselectrico.com/): últimas noticias de autos eléctricos.
+- [Noticias](https://carroselectrico.com/categoria/noticias/): actualidad, lanzamientos y mercado.
+- [Reseñas](https://carroselectrico.com/categoria/resenas/): análisis de modelos eléctricos e híbridos.
+- [Tecnología](https://carroselectrico.com/categoria/tecnologia/): baterías, autonomía, carga y conectividad.
+- [Buscar](https://carroselectrico.com/buscar/): búsqueda de artículos.
+
+## Recursos
+- [Sitemap](https://carroselectrico.com/sitemap.xml)
+- [RSS](https://carroselectrico.com/feed.xml)
+
+## Sobre la cobertura
+- Enfoque local: mercado y disponibilidad de vehículos eléctricos en Ecuador (Quito, Guayaquil, Ambato).
+- Marcas frecuentes: BYD, Tesla, Lynk & Co, Chevrolet, Volkswagen, Sinotruk, entre otras.
+- Temas: precios, autonomía, puntos de carga, comparativas, récords y tendencias 2026-2027.

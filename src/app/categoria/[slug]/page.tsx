@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getArticlesByCategory, getArticles } from "@/lib/articles";
+import { SITE, absoluteUrl } from "@/lib/site";
 import NewsCard from "@/components/NewsCard";
 
 export const runtime = "edge";
@@ -44,8 +45,26 @@ export default async function CategoryPage({
   // Si la categoría aún no tiene noticias, mostramos las más recientes.
   if (articles.length === 0) articles = await getArticles(30);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Inicio", item: SITE.url },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: titulo(slug),
+        item: absoluteUrl(`/categoria/${slug}/`),
+      },
+    ],
+  };
+
   return (
     <div className="mx-auto max-w-7xl px-5 py-12 md:px-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <h1 className="mb-10 inline-block border-b-4 border-brand pb-3 text-4xl font-black uppercase tracking-tight text-ink md:text-5xl">
         {titulo(slug)}
       </h1>
