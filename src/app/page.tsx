@@ -43,11 +43,11 @@ export default async function Home() {
                   <span className="anim-rise inline-block bg-brand px-3 py-1 text-sm font-black uppercase tracking-widest text-black">
                     {hero.categorias[0] || "Noticias"}
                   </span>
-                  <h1 className="anim-rise-2 mt-4 max-w-4xl text-4xl font-black uppercase leading-[0.95] text-white md:text-6xl">
+                  <h1 className="anim-rise-2 mt-3 max-w-3xl text-2xl font-black uppercase leading-[1.05] text-white md:text-4xl">
                     {hero.titulo}
                   </h1>
                   {hero.extracto && (
-                    <p className="anim-rise-3 mt-4 max-w-2xl text-base text-neutral-200 md:text-lg">
+                    <p className="anim-rise-3 mt-3 max-w-xl text-sm text-neutral-200 md:text-base">
                       {hero.extracto}
                     </p>
                   )}
