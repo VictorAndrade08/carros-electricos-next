@@ -9,6 +9,7 @@ const NAV = [
   { label: "Noticias", href: "/categoria/noticias/" },
   { label: "Reseñas", href: "/categoria/resenas/" },
   { label: "Tecnología", href: "/categoria/tecnologia/" },
+  { label: "Cargadores", href: "/cargadores/" },
 ];
 
 /** Cabecera estilo Lynk & Co: barra negra, logo blanco, navegación minimalista.
