@@ -1,0 +1,817 @@
+{
+"updated": "2026-06-18",
+"source": "OpenStreetMap (Overpass)",
+"count": 90,
+"points": [
+{
+"lat": -2.240236,
+"lng": -79.910893,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -2.24028,
+"lng": -79.910903,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -2.426511,
+"lng": -79.339307,
+"title": "Distribuidora de Gas y Pilzener Pinos",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.083206,
+"lng": -78.46742,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -2.191015,
+"lng": -79.814722,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.337533,
+"lng": -78.439749,
+"title": "G&S SEGURIDAD CONTRA INCENDIOS",
+"operator": "G&S SEGURIDAD CONTRA INCENDIOS",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.151008,
+"lng": -78.484425,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -2.213611,
+"lng": -80.975094,
+"title": "Aeropuerto Ulpiano Paez Salinas",
+"operator": "Aeropuerto Ulpiano Paez Salinas",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.166601,
+"lng": -78.471811,
+"title": "Estacion de carga vehiculos electricos 16A",
+"operator": "epe",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -1.183832,
+"lng": -79.503018,
+"title": "Mercado Mocache",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": 1.250948,
+"lng": -78.741805,
+"title": "extractora PDA",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -3.259593,
+"lng": -79.963528,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -2.108288,
+"lng": -79.929524,
+"title": "INATRA",
+"operator": "INATRA",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -2.426839,
+"lng": -79.340701,
+"title": "Servientrega",
+"operator": "Servientrega",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -2.221451,
+"lng": -79.8896,
+"title": "CNEL EP",
+"operator": "CNEL EP",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.996719,
+"lng": -80.709318,
+"title": "Tableros y herrajes Marquele",
+"operator": "Tableros y herrajes Marquele",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -2.39849,
+"lng": -80.079594,
+"title": "samabasa",
+"operator": "samabasa",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.140288,
+"lng": -78.499741,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -1.896912,
+"lng": -79.102038,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -2.17418,
+"lng": -79.890968,
+"title": "Enetsa",
+"operator": "Enetsa",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -2.194689,
+"lng": -79.953667,
+"title": "electrica guayaquil",
+"operator": "electrica guayaquil",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.708326,
+"lng": -76.886769,
+"title": "Estación Sur",
+"operator": "Estación Sur",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.110437,
+"lng": -78.443489,
+"title": "Amc centro de distribución",
+"operator": "Amc centro de distribución",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.176095,
+"lng": -78.479076,
+"title": "Quicentro Shopping - KIA Motors",
+"operator": "Quicentro Shopping - KIA Motors",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.23761,
+"lng": -79.173226,
+"title": "Bemauexpress",
+"operator": "Bemauexpress",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -1.497615,
+"lng": -78.063185,
+"title": "Distribuidora de Gas",
+"operator": "Distribuidora de Gas",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": 0.26151,
+"lng": -79.363487,
+"title": "PDA",
+"operator": "PDA",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.805812,
+"lng": -80.256791,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.173896,
+"lng": -76.354375,
+"title": "andes fanny 1",
+"operator": "andes fanny 1",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -2.141377,
+"lng": -79.912414,
+"title": "Trans Morales",
+"operator": "Trans Morales",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -2.155781,
+"lng": -80.707938,
+"title": "Cantera San Miguel",
+"operator": "Cantera San Miguel",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.00949,
+"lng": -76.637609,
+"title": "Gabarra 🛥",
+"operator": "Gabarra 🛥",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -2.060889,
+"lng": -79.941252,
+"title": "Pronaca",
+"operator": "Pronaca",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": 1.057409,
+"lng": -78.992658,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -2.198459,
+"lng": -79.827327,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.242102,
+"lng": -79.19348,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -3.630123,
+"lng": -78.570227,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -1.01409,
+"lng": -79.469849,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -3.404177,
+"lng": -78.581338,
+"title": "DF2",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -4.000201,
+"lng": -79.196065,
+"title": "Punto de carga",
+"operator": "",
+"access": "yes",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -2.758289,
+"lng": -79.401847,
+"title": "Ruta de la Electromovilidad",
+"operator": "Centro Sur",
+"access": "yes",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -2.412776,
+"lng": -79.352594,
+"title": "Ruta de la Electromovilidad",
+"operator": "Centro Sur",
+"access": "yes",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -2.904195,
+"lng": -78.984063,
+"title": "Electro linera Centro sur",
+"operator": "Centro sur",
+"access": "private",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.122845,
+"lng": -78.474887,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -1.356298,
+"lng": -78.617262,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.158034,
+"lng": -78.486209,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.187443,
+"lng": -78.492056,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.168142,
+"lng": -78.472482,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.204292,
+"lng": -78.425881,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.183767,
+"lng": -78.500021,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.158032,
+"lng": -78.498274,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.173963,
+"lng": -78.478879,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.120527,
+"lng": -78.359981,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.217104,
+"lng": -78.511948,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.199085,
+"lng": -78.431422,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.169365,
+"lng": -78.491443,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.19848,
+"lng": -78.436298,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.188668,
+"lng": -78.487154,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.187484,
+"lng": -78.484007,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.295118,
+"lng": -78.558599,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.282035,
+"lng": -78.543422,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.215314,
+"lng": -78.50585,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.271568,
+"lng": -78.529297,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.326517,
+"lng": -78.443465,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.091372,
+"lng": -78.447521,
+"title": "Punto de carga",
+"operator": "",
+"access": "yes",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -3.776884,
+"lng": -78.7862,
+"title": "EDF",
+"operator": "EDF",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -3.976627,
+"lng": -79.203458,
+"title": "Mirasol Estación de Carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -2.905274,
+"lng": -79.004475,
+"title": "Punto de carga",
+"operator": "",
+"access": "yes",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -2.913308,
+"lng": -78.989362,
+"title": "Electrolinera",
+"operator": "Electrolinera",
+"access": "yes",
+"fee": "yes",
+"socket": ""
+},
+{
+"lat": -2.919666,
+"lng": -79.001231,
+"title": "Universidad del Azuay",
+"operator": "Universidad del Azuay",
+"access": "private",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -2.89382,
+"lng": -78.993698,
+"title": "Mirasol Chevrolet",
+"operator": "Mirasol Chevrolet",
+"access": "customers",
+"fee": "yes",
+"socket": ""
+},
+{
+"lat": -2.894193,
+"lng": -78.994231,
+"title": "BYD Cuenca",
+"operator": "BYD Cuenca",
+"access": "customers",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -2.898375,
+"lng": -78.996962,
+"title": "Portal Artesanal",
+"operator": "Portal Artesanal",
+"access": "customers",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -2.906019,
+"lng": -79.00254,
+"title": "centro comercial milenium plaza",
+"operator": "centro comercial milenium plaza",
+"access": "customers",
+"fee": "no",
+"socket": ""
+},
+{
+"lat": -2.904756,
+"lng": -79.004369,
+"title": "Parque de la madre",
+"operator": "Parque de la madre",
+"access": "yes",
+"fee": "no",
+"socket": ""
+},
+{
+"lat": -2.893407,
+"lng": -78.962349,
+"title": "Mavesa Cuenca",
+"operator": "Mavesa Cuenca",
+"access": "customers",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -2.895062,
+"lng": -78.963261,
+"title": "Mavesa Ecuador",
+"operator": "Mavesa Ecuador",
+"access": "customers",
+"fee": "no",
+"socket": ""
+},
+{
+"lat": -1.326429,
+"lng": -78.543298,
+"title": "Gasolinera Panaamericana",
+"operator": "Gasolinera Panaamericana",
+"access": "customers",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -1.26827,
+"lng": -78.611404,
+"title": "Electroliniera ISTT",
+"operator": "Electroliniera ISTT",
+"access": "customers",
+"fee": "yes",
+"socket": ""
+},
+{
+"lat": 0.868875,
+"lng": -79.8554,
+"title": "Hotel club del sol",
+"operator": "Hotel club del sol",
+"access": "customers",
+"fee": "",
+"socket": ""
+},
+{
+"lat": 0.899261,
+"lng": -79.8019,
+"title": "Club del pacifico",
+"operator": "Club del pacifico",
+"access": "customers",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -1.395247,
+"lng": -78.408204,
+"title": "Samari Spa Resort",
+"operator": "Samari Spa Resort",
+"access": "customers",
+"fee": "no",
+"socket": ""
+},
+{
+"lat": -1.394482,
+"lng": -78.405349,
+"title": "Casa Verde",
+"operator": "Casa Verde",
+"access": "customers",
+"fee": "no",
+"socket": ""
+},
+{
+"lat": 0.898779,
+"lng": -79.708435,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -2.758279,
+"lng": -79.40187,
+"title": "Ruta de la Electromovilidad",
+"operator": "Centro Sur",
+"access": "yes",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -2.412761,
+"lng": -79.352589,
+"title": "Ruta de la Electromovilidad",
+"operator": "Centro Sur",
+"access": "yes",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.091426,
+"lng": -78.447567,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -2.102261,
+"lng": -79.889527,
+"title": "Punto de carga",
+"operator": "",
+"access": "",
+"fee": "",
+"socket": ""
+},
+{
+"lat": -0.215367,
+"lng": -78.394629,
+"title": "Corporación Favorita",
+"operator": "Corporación Favorita",
+"access": "customers",
+"fee": "no",
+"socket": ""
+},
+{
+"lat": -0.215358,
+"lng": -78.394595,
+"title": "Corporación Favorita",
+"operator": "Corporación Favorita",
+"access": "customers",
+"fee": "no",
+"socket": ""
+}
+]
+}
