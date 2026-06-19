@@ -49,19 +49,26 @@ function toArticle(r: Row): Article {
 const COLS =
   "slug, titulo, fecha, portada, extracto, html, categorias, tags";
 
-/** Todas las noticias, de más nueva a más antigua. */
+// Solo se muestran las noticias cuya fecha ya llegó. Las publicaciones con
+// fecha futura quedan "programadas": aparecen solas cuando su fecha pasa, sin
+// necesidad de un cron. (fecha NULL = siempre visible, para posts legacy.)
+const PUBLICADO = "(fecha IS NULL OR datetime(fecha) <= datetime('now'))";
+
+/** Todas las noticias publicadas, de más nueva a más antigua. */
 export async function getArticles(limit = 60): Promise<Article[]> {
   const rows = await queryParams<Row>(
-    `SELECT ${COLS} FROM articulos ORDER BY fecha DESC LIMIT ?1;`,
+    `SELECT ${COLS} FROM articulos
+       WHERE ${PUBLICADO}
+       ORDER BY datetime(fecha) DESC LIMIT ?1;`,
     [limit],
   );
   return rows.map(toArticle);
 }
 
-/** Una noticia por slug. */
+/** Una noticia por slug (solo si ya está publicada). */
 export async function getArticle(slug: string): Promise<Article | null> {
   const rows = await queryParams<Row>(
-    `SELECT ${COLS} FROM articulos WHERE slug = ?1 LIMIT 1;`,
+    `SELECT ${COLS} FROM articulos WHERE slug = ?1 AND ${PUBLICADO} LIMIT 1;`,
     [slug],
   );
   return rows.length ? toArticle(rows[0]) : null;
@@ -89,8 +96,9 @@ export async function searchArticles(q: string, limit = 40): Promise<SearchHit[]
 
   const nuevos = await queryParams<Row>(
     `SELECT ${COLS} FROM articulos
-       WHERE titulo LIKE ?1 OR extracto LIKE ?1 OR html LIKE ?1
-       ORDER BY fecha DESC LIMIT ?2;`,
+       WHERE (titulo LIKE ?1 OR extracto LIKE ?1 OR html LIKE ?1)
+         AND ${PUBLICADO}
+       ORDER BY datetime(fecha) DESC LIMIT ?2;`,
     [like, limit],
   ).catch(() => [] as Row[]);
 
