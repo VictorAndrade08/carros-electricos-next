@@ -109,6 +109,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="es" className={archivo.variable}>
+      {/* Conexión anticipada al host de imágenes (R2): adelanta DNS+TLS para que
+          la imagen LCP del hero cargue antes. React 19 lo eleva al <head>. */}
+      <link rel="preconnect" href="https://pub-25cde2184a5249da96fa022aae951321.r2.dev" crossOrigin="" />
+      <link rel="dns-prefetch" href="https://pub-25cde2184a5249da96fa022aae951321.r2.dev" />
       <body className="bg-white text-neutral-900 antialiased">
         {/* Marca que hay JS antes de pintar: evita parpadeo en las animaciones. */}
         <script

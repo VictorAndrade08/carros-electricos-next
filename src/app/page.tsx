@@ -32,6 +32,8 @@ export default async function Home() {
               <img
                 src={hero.portada || "/logo.png"}
                 alt={hero.titulo}
+                width={1536}
+                height={1024}
                 fetchPriority="high"
                 decoding="async"
                 sizes="100vw"

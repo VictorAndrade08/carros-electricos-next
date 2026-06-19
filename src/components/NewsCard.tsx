@@ -14,6 +14,8 @@ export default function NewsCard({ a }: { a: Article }) {
         <img
           src={a.portada || "/logo.png"}
           alt={a.titulo}
+          width={1536}
+          height={1024}
           loading="lazy"
           decoding="async"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
